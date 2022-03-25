@@ -1,0 +1,72 @@
+.react-hook-modal {
+    position: absolute;
+    margin: 2em;
+    --shadow-color: hsla(0deg, 0%, 80%, calc(1 / 3));
+    display: flex;
+    flex-direction: column;
+    width: 286px;
+    color: #000;
+    border-radius: 0.75em;
+    background: #fff;
+    box-shadow: 1px 2px 2px var(--shadow-color), 2px 4px 4px var(--shadow-color), 3px 6px 6px var(--shadow-color);
+    overflow: hidden;
+}
+
+    .react-hook-modal.top-left {
+        top: 0;
+        left: 0;
+    }
+
+    .react-hook-modal.top-right {
+        top: 0;
+        right: 0;
+    }
+
+    .react-hook-modal.bottom-left {
+        bottom: 0;
+        left: 0;
+    }
+
+    .react-hook-modal.bottom-right {
+        bottom: 0;
+        right: 0;
+    }
+
+    .react-hook-modal.center {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+.react-hook-modal-header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+}
+
+.react-hook-modal-close-icon {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+    .react-hook-modal-close-icon:hover,
+    .react-hook-modal-close-icon:active,
+    .react-hook-modal-close-icon:focus {
+        color: #ff1d25;
+    }
+
+.react-hook-modal-body {
+    padding: 2em 1.5em;
+}
+
+.react-hook-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0deg, 0%, 85%, 0.2);
+    backdrop-filter: blur(5px);
+}
