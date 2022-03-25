@@ -13,7 +13,7 @@ function App() {
 
     return (
         <>
-            <HookModal className={s.modal} {...register({ showHeader: true })}>
+            <HookModal {...register({ showHeader: true })}>
                 <HookModal.Body className={s.modalBody}>
                     {"This is a test modal."}
                 </HookModal.Body>
